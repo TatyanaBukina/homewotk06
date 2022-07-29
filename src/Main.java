@@ -31,12 +31,12 @@ public class Main {
         int[] arr = generateRandomArray();
         int maxNum = arr[0];
         int minNum = arr[0];
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] > maxNum) {
-                    maxNum = arr[i];
-                } else if (arr[i] < minNum) {
-                    minNum = arr[i];
-                }
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxNum) {
+                maxNum = arr[i];
+            } else if (arr[i] < minNum) {
+                minNum = arr[i];
+            }
         }
         System.out.println("Максимальная сумма трат за день составила" + " " + maxNum + " " + " рублей»");
         System.out.println("Мннимальная сумма трат за день составила" + " " + minNum + " " + " рублей»");
@@ -47,13 +47,14 @@ public class Main {
         // cедняя сумма трат
         int[] arr = generateRandomArray();
         float avarage = 0;
-        {
-            for (int i = 0; i < arr.length; i++) {
-                avarage += arr[i];
-                avarage = avarage / arr.length;
-            }
-            System.out.println("Средняя сумма трат за месяц составила" + " " + avarage + " " + " рублей»");
+
+        for (int i = 0; i < arr.length; i++) {
+            avarage += arr[i];
         }
+        avarage = avarage / arr.length;
+
+        System.out.println("Средняя сумма трат за месяц составила" + " " + avarage + " " + " рублей»");
+
     }
 
     private static void task4() {
